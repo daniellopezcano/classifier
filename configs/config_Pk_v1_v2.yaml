@@ -1,0 +1,23 @@
+# -------------------- global -------------------- #
+
+path_save : "/cosmos_storage/home/dlopez/Projects/CL_inference/DATASETS_classifier/models/CL_Pk_v1_v2"
+
+# -------------------- dataset -------------------- #
+
+path_load               : "/cosmos_storage/home/dlopez/Projects/CL_inference/DATASET_BACCO/kmax_0.6/Pk"
+list_model_names        : ["Modelv1", "Modelv2"]
+
+# -------------------- arquitechture -------------------- #
+
+hidden_layers : [32, 16, 8]
+
+# -------------------- training -------------------- #
+
+NN_epochs            : 100
+NN_batches_per_epoch : 8
+batch_size           : 64
+lr                   : 0.001
+weight_decay         : 0.000000001
+clip_grad_norm       : 100
+seed_mode            : "random"
+seed                 : 0
